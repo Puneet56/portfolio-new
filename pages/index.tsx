@@ -1,6 +1,6 @@
+import Content from "@/features/content";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Content from "../features/content";
 
 const Home: NextPage = () => {
 	return (
