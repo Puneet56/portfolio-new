@@ -5,7 +5,7 @@ import tw from "tailwind-styled-components";
 const HeroTextContainer = tw.div<any>`flex flex-col gap-4 items-start justify-center w-1/2 h-[70%] pl-4 snap-mandatory snap-y
 `;
 
-const HeroImageContainer = tw.div<any>`flex flex-col items-center justify-center w-1/2 h-[70%] 
+const HeroImageContainer = tw.div<any>`flex flex-col items-center justify-center w-1/2 aspect-square 
 `;
 
 const Heading = tw.h1<any>`font-bold text-white
@@ -19,11 +19,11 @@ const Content = () => {
 			<ParallaxLayer
 				factor={1}
 				offset={0}
-				speed={1.2}
+				speed={1.5}
 				className="flex bg-gradient-to-b from-gray-800 to bg-slate-400 snap-start flex-row items-center justify-start"
 			></ParallaxLayer>
 
-			<ParallaxLayer offset={0} speed={0.4} className="flex flex-row items-center justify-start">
+			<ParallaxLayer offset={0} speed={-1} className="flex flex-row items-center justify-start">
 				<HeroTextContainer>
 					<Heading className="text-6xl pb-4">Hey! I am Puneet</Heading>
 					<Heading className="text-4xl">Tech Enthusiast</Heading>
